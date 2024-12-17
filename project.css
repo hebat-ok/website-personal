@@ -1,0 +1,97 @@
+body {
+    background-color: #EEEEEE;
+    margin: 0;
+    background-image: url('gambar/wave3.svg'); /* Periksa path gambar */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex; /* Flexbox untuk menu horizontal */
+    justify-content: space-between;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Untuk meratakan card di tengah secara horizontal */
+    align-items: center; /* Untuk memastikan card berada di tengah secara vertikal jika dibutuhkan */
+    gap: 40px; /* Jarak antar card */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: calc(20% - 20px); /* Menyesuaikan ukuran card */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(32% - 20px); /* Menampilkan tiga card per baris */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(48% - 20px); /* Menampilkan dua card per baris */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Menampilkan satu card per baris di layar kecil */
+    }
+}

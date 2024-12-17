@@ -1,0 +1,148 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #343a40;
+    color: #fff;
+    background-image:url(gambar/wave.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}        
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float:left
+}  
+li a{
+    display: block;
+    padding: 8px; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+li a:hover {
+  background-color: #111;
+}   
+.avatar{
+    border-radius:50%;
+    border: 5px solid #cfc7c7;
+    position: absolute;
+    top: 15%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t{
+    position: fixed;
+    top: 43%;
+    left: 51%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tt{
+    position: fixed;
+    top: 53%;
+    left: 51%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nv{
+  float:right
+} 
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px ;
+    background-color: #42495b;
+    border-radius: 10px;
+}
+.contact-container form {
+  padding-right: 20px;
+}
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3b66f5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #2d54cc;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  top: 16em;
+}
+footer .heart {
+  color: red;
+}
+footer .social-icons img {
+  width: 20px;
+  margin: 0 5px;
+}
+.social-icons a {
+  color: white; /* Warna default ikon */
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.social-icons a:hover {
+  color: #3b5998; /* Warna hover default, bisa untuk Facebook */
+}
+
+/* Khusus untuk setiap media sosial */
+.social-icons a:hover .fa-facebook {
+  color: #3b5998;
+}
+
+.social-icons a:hover .fa-instagram {
+  color: #E1306C;
+}
+
+.social-icons a:hover .fa-whatsapp {
+  color: #25D366;
+}
+
+.social-icons a:hover .fa-telegram {
+  color: #0088CC;
+}
+
+
+
